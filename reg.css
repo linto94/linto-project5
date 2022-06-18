@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: url(bg-intro-desktop.png) repeat center;
+	background-color: hsl(0, 100%, 74%);
+	font-size: 16px;
+	font-weight: 600;
+}
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.first{
+	margin-left: 70px;
+}
+section{
+	padding: 2rem;
+}
+h1{
+	font-size: 3rem;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+p{
+	color: #fff;
+	font-weight: 500;
+}
+.next{
+	background-color: hsl(248, 32%, 49%);
+	color: #fff;
+	padding: 10px 60px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	text-align: center;
+	box-shadow: 0px 0px 8px 0px hsl(249, 10%, 26%);
+}
+.main-form{
+	width: 450px;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0px 0px 8px 0px hsl(249, 10%, 26%);
+	padding: 15px;
+}
+input:requried:invaild{
+	outline: none;
+	background-image: url(icon-error.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-origin: content-box;
+}
+input{
+	display: block;
+	margin: 1rem 0;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid hsl(246, 25%, 77%);
+	border-radius: 5px;
+}
+
+button{
+	background-color: hsl(154, 59%, 51%);
+	color: white;
+	width: 100%;
+	border-radius: 5px;
+	padding: 9px;
+	margin-bottom: 10px;
+	border: none;
+}
+.sec-p{
+	color: hsl(246, 25%, 77%);
+	font-size: 12px;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: hsl(0, 100%, 74%);
+}
+
+/*Start of Media Query Design*/
+
+@media(max-width: 857px) and (min-width: 357px){
+	body{
+		background: url(bg-intro-mobile.png) no-repeat center;
+		background-color: hsl(0, 100%, 74%);
+		font-size: 16px;
+		font-weight: 600;
+
+	}
+	main{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.firt{
+		margin-left: 0;
+		text-align: center;
+	}
+	.first-p{
+		font-size: 14px;
+	}
+
+
+
+}
+
+@media (max-width: 600px){
+	.next, .main-form{
+		width: 400px;
+	}
+}
+
+
+
+@media (max-width: 533px){
+	main{
+		margin: auto 50px;
+	}
+	.next, .main-form{
+		width: 350px;
+	}
+}
+
+@media (max-width: 408px){
+	main{
+		margin: auto 3px;
+	}
+	.next, .main-form{
+		width: 300px;
+	}
+
+}
+ 
